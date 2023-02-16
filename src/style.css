@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* 字体图标得样式 */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* 总容器 */
+#container {
+  background-color: bisque;
+  box-sizing: border-box;
+}
+
+/* flex布局 */
+.flex {
+  display: flex;
+}
+
+/* 独占一行 */
+.flex-1 {
+  flex: 1;
+}
+
+/* 横排布局 */
+.row {
+  flex-direction: row;
+}
+
+/* 纵向布局 */
+.column {
+  flex-direction: column;
+}
+
+/* 居中样式 */
+.center {
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+}
+
+/* 顺时针旋转动画 */
+@keyframes loading {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* 中间内容样式 */
+.body-content {
+  overflow-y: scroll;
+}
+
+/* // 滚动条样式 */
+/* // 用于设置整个滚动条的样式。eg：设置滚动条大小及背景颜色 */
+.body-content::-webkit-scrollbar {
+  width: 10px;
+  background-color: red;
+}
+
+/* //滚动条上的滚动滑块,eg:设置滑块背景色 */
+.body-content::-webkit-scrollbar-thumb {
+  background-color: #568abe;
+  border-radius: 50px;
+}
+
+/* // 滚动条轨道, 与 ::-webkit-scrollbar 不同的是 ::-webkit-scrollbar-track 设置的是滑块可滑动区域的样式。eg: 设置滚动条轨道背景色 */
+.body-content::-webkit-scrollbar-track {
+  background-color: #73CCFF;
+}
